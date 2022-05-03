@@ -3,9 +3,9 @@
 A personal tool that pretty prints valid JSON. Not intended for production use.
 
 ## Building: 
-You can use SPM or swiftc to mess with...
+Obviously, you can use SPM or swiftc to mess with it.
 
-The exe in the repo was built with build.sh.
+The build args I use are in build.sh.
 
 ## Usage: 
 Just pipe whatever to pretty:
@@ -14,8 +14,12 @@ Just pipe whatever to pretty:
 curl http://localhost:8080/api/users | pretty
 ```
 
-Swift can handle input from files or streams.
 Could also run it and just feed it some data through standard input.
+
+Swift readline handles input from files or streams just fine, though 
+it runs a little slower if targetting Windows (still faster than the convenient alternatives).
+
+## But why...?
 
 This only exists because I was frustrated by the slower tools that are already 
 included with macOS devtools, and I knew I could write it myself in < 5 minutes.
@@ -23,4 +27,8 @@ included with macOS devtools, and I knew I could write it myself in < 5 minutes.
 In my initial testing, piping to pretty is 72% faster and 60% more power efficient than
 piping to the stock python3 -m json.tool.
 
-Additional functionality is up to the user, but obviously computers are amazing, so go nuts.
+Fun fact: Linux target is 5 times faster than the macOS 
+target (doesn't have to go through objC for the syscalls).  
+If targetting Linux I recommend passing -static-stdlib.
+
+Additional functionality is up to the user, but computers are amazing, so go nuts.
