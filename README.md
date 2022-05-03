@@ -28,6 +28,12 @@ included with macOS devtools, and I knew I could write it myself in < 5 minutes.
 In my initial testing, piping to pretty is 72% faster and 60% more power efficient than
 piping to the stock `python3 -m json.tool`.  The compiled executable is also under 100kb.
 
+- `curl http://localhost:8080/api/users | python3 -m json.tool` \
+   93% CPU, Total time: 0.071
+
+- `curl http://localhost:8080/api/users | pretty` \
+  33% CPU, Total time: 0.021
+
 This is still not good, but it was good enough for me.
 
 Fun fact: Linux target is 5 times faster than the macOS 
