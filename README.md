@@ -19,13 +19,13 @@ Could also run it and just feed it some data through standard input.
 Swift readline handles input from files or streams just fine, though 
 it runs a little slower if targetting Windows (still faster than the convenient alternatives).
 
-## But why...?
+## But why?
 
-This only exists because I was frustrated by the slower tools that are already 
+This only exists because I was frustrated by the slower, crappy options that are already 
 included with macOS devtools, and I knew I could write it myself in < 5 minutes.
 
 In my initial testing, piping to pretty is 72% faster and 60% more power efficient than
-piping to the stock python3 -m json.tool.
+piping to the stock python3 -m json.tool.  The compiled executable is also less than 100kb.
 
 Fun fact: Linux target is 5 times faster than the macOS 
 target (doesn't have to go through objC for the syscalls).  
