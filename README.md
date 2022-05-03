@@ -12,7 +12,7 @@ The build args I use are in build.sh.
 Just pipe whatever to pretty:
 
 ```
-curl http://localhost:8080/api/users | pretty
+curl <endpoint> | pretty
 ```
 
 Could also run it and just feed it some data through standard input.
