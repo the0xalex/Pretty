@@ -25,7 +25,9 @@ This only exists because I was frustrated by the slower, crappy options that are
 included with macOS devtools, and I knew I could write it myself in < 5 minutes.
 
 In my initial testing, piping to pretty is 72% faster and 60% more power efficient than
-piping to the stock `python3 -m json.tool`.  The compiled executable is also less than 100kb.
+piping to the stock `python3 -m json.tool`.  The compiled executable is also under 100kb.
+
+This is still not good, but it was good enough for me.
 
 Fun fact: Linux target is 5 times faster than the macOS 
 target (doesn't have to go through objC for the syscalls).  
