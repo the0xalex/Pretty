@@ -1,6 +1,7 @@
 # Pretty
 
-A personal tool that pretty prints valid JSON. Not intended for production use.
+A personal tool that pretty prints valid JSON. 
+Not intended for production use, but in case anyone else wants it, here ya go.
 
 ## Building: 
 Obviously, you can use SPM or swiftc to mess with it.
