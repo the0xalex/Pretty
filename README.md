@@ -1,3 +1,13 @@
+
+## ARCHIVED
+
+*This repo is basically useless.  When I made it, I didn't know that jq existed.*
+*If you don't use jq, you should.*
+
+-Alex
+
+---
+
 # Pretty
 
 A personal tool that pretty prints valid JSON. 
